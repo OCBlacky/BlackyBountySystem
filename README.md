@@ -10,6 +10,64 @@ The system supports both **MySQL** and **File-based (JSON)** storage, allowing u
 - Accept bounties to hunt down players.
 - Support for both **MySQL** and **File-based storage**.
 
+## Commands
+
+Here is a list of commands you can use to interact with the **Bounty Hunter System** in your server:
+
+1. **Creating a Bounty**
+   - **Command**: `/createbounty [player_name] [reward]`
+   - **Description**: This command allows you to create a bounty on another player.
+   - **Example**: 
+     ```
+     /createbounty JohnDoe 5000
+     ```
+     This will create a bounty on the player **JohnDoe** with a reward of **5000**.
+
+2. **Listing Active Bounties**
+   - **Command**: `/listbounties`
+   - **Description**: This command displays a list of all active bounties currently available in the system.
+   - **Example**: 
+     ```
+     /listbounties
+     ```
+
+3. **Accepting a Bounty**
+   - **Command**: `/acceptbounty [bounty_id]`
+   - **Description**: Use this command to accept a bounty that is currently active. You will be tasked with hunting down the target player and completing the bounty.
+   - **Example**: 
+     ```
+     /acceptbounty 1
+     ```
+     This will accept the bounty with **ID 1**.
+
+4. **Completing a Bounty**
+   - **Command**: `/completebounty [bounty_id]`
+   - **Description**: Once you have completed the bounty by hunting down and defeating the target, use this command to mark the bounty as complete and claim your reward.
+   - **Example**: 
+     ```
+     /completebounty 1
+     ```
+     This will mark the bounty with **ID 1** as completed and award you the reward.
+
+5. **Viewing Your Active Bounties**
+   - **Command**: `/mybounties`
+   - **Description**: This command allows you to view a list of all bounties you have either created or accepted.
+   - **Example**:
+     ```
+     /mybounties
+     ```
+
+6. **Cancelling a Bounty**
+   - **Command**: `/cancelbounty [bounty_id]`
+   - **Description**: If you created a bounty and want to cancel it before someone accepts, use this command.
+   - **Example**:
+     ```
+     /cancelbounty 1
+     ```
+
+These commands will help you interact with the Bounty Hunter System, allowing players to create bounties, accept them, complete them, and track their progress easily.
+
+
 ## Installation
 
 1. **Clone or Download the Repository**:
